@@ -1,0 +1,39 @@
+
+
+.h_70{
+    height: 70px;
+}
+
+.h100{
+    height:100%
+}
+
+.header_bt{
+    height:40px;
+    width: 90px;
+    line-height: 40px;
+  
+}
+.a_green{
+    color: #159963;
+}
+
+.a_gray{
+    color: #6d6d6d;
+}
+
+.a_white{
+    color: #fff;
+}
+
+.header_bt_register{
+    background:#159963;  
+    border-radius: 10px;  
+
+}
+
+.search_icon{
+    height: 50px;
+    width: 50px;
+    background: url("~@/assets/img/search.png") no-repeat center;
+}
