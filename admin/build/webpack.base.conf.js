@@ -18,7 +18,7 @@ const createLintingRule = () => ({
     emitWarning: !config.dev.showEslintErrorsInOverlay
   }
 })
-
+const webpack=require('webpack');
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -31,6 +31,13 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+     // 在这里添加 请不要放在output前面 那样会报错
+    plugins: [
+        new webpack.ProvidePlugin({
+            'window.Quill': 'quill/dist/quill.js',
+            'Quill': 'quill/dist/quill.js'
+        }),
+    ],
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -40,7 +47,7 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      //...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',

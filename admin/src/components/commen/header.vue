@@ -16,7 +16,7 @@
                   <b-button size="sm"  class="my-2 my-sm-0" type="submit" @click.prevent="getMeal">Search</b-button>
                 </b-nav-form>
                 <b-nav-item-dropdown right>
-             
+
                   <template slot="button-content"><em>User</em></template>
                   <b-dropdown-item href="#">Profile</b-dropdown-item>
                   <b-dropdown-item href="#">Sign Out</b-dropdown-item>
@@ -66,7 +66,7 @@
              <div class="col-4 ml-auto  font-weight-bold "><div class="header_bt"><a href="" style="color:#159963">立即登录</a></div></div>
              <div class="col-4 mr-auto font-weight-bold "><div class="header_bt header_bt_register" ><a href="" class="a_white">免费注册</a></div></div>
         </div>     </b-navbar-nav>
-      
+
     </b-collapse>
   </b-navbar>
 </div>
